@@ -1,0 +1,51 @@
+/*
+------------------------ =cornerstoneUX touchTips ------------------------ */
+*[data-touchTips]:not(img):not(figure) {
+	border-bottom: 1px dotted #999;
+	cursor: help;
+}
+.touchTips {
+	background: #111;
+	box-shadow: 0 0.50rem 0.50rem -0.25rem rgba(0,0,0,.3);
+	color: #fff;
+	opacity: 0;
+	padding: 1rem;
+	position: absolute;
+	text-align: center;
+    -webkit-transition: 0.3s ease-in-out all;
+    transition: 0.3s ease-in-out all;
+	z-index: 100;
+}
+	.touchTips--show {
+		opacity: 1;
+	}
+
+	/* ------------------------ directional arrow ------------------------ */
+	.touchTips:after {
+		border-style: solid;
+		border-color: transparent;
+		border-top-color: #111;
+		border-width: 0.50rem 0.50rem 0;
+		content: '';
+		margin-left: -0.50rem;
+		position: absolute;
+		left: 50%;
+		bottom: -0.50rem;
+		width: 0;
+		height: 0;
+	}
+		.touchTips.top:after {
+			border-top-color: transparent;
+			border-bottom: 0.50rem solid #111;
+			top: -1rem;
+			bottom: auto;
+		}
+		.touchTips.left:after {
+			left: 0.50rem;
+			margin: 0;
+		}
+		.touchTips.right:after {
+			margin: 0;
+			right: 0.50rem;
+			left: auto;
+		}
