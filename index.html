@@ -1,48 +1,73 @@
 <!DOCTYPE html>
 <html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="description" content="cornerstoneUX.touchTips : A responsive and mobile-friendly jQuery tool-tip plug-in.">
+		<link rel="stylesheet" media="screen" href="stylesheets/stylesheet.css">
+		<title>cornerstoneUX.touchTips</title>
+	</head>
+	<body>
+		<!-- HEADER -->
+		<div id="header_wrap" class="outer">
+			<header class="inner">
+				<a id="forkme_banner" href="https://github.com/influxweb/cornerstoneUX.touchTips">View on GitHub</a>
+				<h1 id="project_title">cornerstoneUX.touchTips</h1>
+				<h2 id="project_tagline">A responsive and mobile-friendly jQuery tool-tip plug-in.</h2>
+					<section id="downloads">
+						<a class="zip_download_link" href="https://github.com/influxweb/cornerstoneUX.touchTips/zipball/master">Download this project as a .zip file</a>
+						<a class="tar_download_link" href="https://github.com/influxweb/cornerstoneUX.touchTips/tarball/master">Download this project as a tar.gz file</a>
+					</section>
+			</header>
+		</div>
+		<!-- MAIN CONTENT -->
+		<div id="main_content_wrap" class="outer">
+			<section id="main_content" class="inner">
+				<h3>The What?</h3>
+				<p>touchTips is a jQuery plug-in you can use to add responsive and mobile-friendly tool-tips to your site. This is a building block which can be added to the <a href="https://github.com/influxweb/cornerstoneUX" target="_blank" title="cornerstoneUX Development Architecture">cornerstoneUX</a> architecture. Unlike add-ons for other frameworks and architectures, touchTips can be used on any site by adding the style-sheets provided with the download. There is no limit to the number of tool-tips you can call on a page.</p>
+				<h3>The Why?</h3>
+				<p>While searching for a good solution to add tool-tips to a responsive site, I came across and article by <a href="http://osvaldas.info/elegant-css-and-jquery-tooltip-responsive-mobile-friendly" target="_blank">Osvaldas Valutis</a> on such a topic. While his approach did everything I needed, I was not a fan of the automatic invoking method being used. I have taken his concept and expanded it to allow for multiple ways to send content to the tool-tip for display as well as flexibility in the maximum width.</p>
+				<h3>Plug-In Options</h3>
+				<table class="table-border table-stripe">
+					<thead>
+						<tr>
+							<th>Property</th>
+							<th>Default</th>
+							<th>Description</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td data-th="Property">maxWidth</td>
+							<td data-th="Default">360</td>
+							<td data-th="Description">This is maximum width you would like the tool-tip to take up on larger screens.</td>
+						</tr>
+						<tr>
+							<td data-th="Property">tip</td>
+							<td data-th="Default">null</td>
+							<td data-th="Description">This is the content you would like to display in the tool-tip. If no value is passed, the tool-tip will display the contents of the <code>data-touchTips</code> element. You can either pass a text string to display or a selector or DOM element that you would like to display the HTML contents of. Additionally, you can pass a selector or DOM element in the <code>data-touchTips</code> value to disply the HTML contents of.</td>
+						</tr>
+						<tr>
+							<td data-th="Property">tipClass</td>
+							<td data-th="Default">'touchTips'</td>
+							<td data-th="Description">This is the class applied to the tool-tip.</td>
+						</tr>
+					</tbody>
+				</table>
+				<h3>Installation</h3>
+				<p>To install touchTips is real easy. Just add a link to the <code>touchTips.css</code> file in the <code>HEAD</code> of your page. Add a link to the <code>jquery.touchTips.js</code> file below your link to jQuery, and add the initialization string to your page or external JavaScript file. Then, just add a <code>data-touchTips</code> attribute to the element(s) you would like to have trigger your tool-tip(s).</p>
+				<h3>Examples</h3>
 
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="description" content="Cornerstoneux.touchtips : A responsive and mobile-friendly jQuery tool-tip plug-in.">
-
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-
-    <title>Cornerstoneux.touchtips</title>
-  </head>
-
-  <body>
-
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/influxweb/cornerstoneUX.touchTips">View on GitHub</a>
-
-          <h1 id="project_title">Cornerstoneux.touchtips</h1>
-          <h2 id="project_tagline">A responsive and mobile-friendly jQuery tool-tip plug-in.</h2>
-
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/influxweb/cornerstoneUX.touchTips/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/influxweb/cornerstoneUX.touchTips/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-      </section>
-    </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Cornerstoneux.touchtips maintained by <a href="https://github.com/influxweb">influxweb</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
-
-    
-
-  </body>
+			</section>
+		</div>
+		<!-- FOOTER	-->
+		<div id="footer_wrap" class="outer">
+			<footer class="inner">
+				<p class="copyright">cornerstoneUX.touchTips maintained by <a href="https://github.com/influxweb">influxweb</a></p>
+				<p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+			</footer>
+		</div>
+		<script src="javascripts/main.js"></script>
+	</body>
 </html>
