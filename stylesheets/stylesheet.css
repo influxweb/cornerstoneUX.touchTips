@@ -190,6 +190,10 @@ table {
 	.table-stripe tbody > tr:nth-child(odd) > td {
 		background: #f8f8f8;
 	}
+.all-hidden {
+	display: none;
+	visibility: hidden;
+}
 
 
 /*******************************************************************************
@@ -363,7 +367,7 @@ Small Device Styles
 
 
 /*******************************************************************************
-ornerstoneUX.touchTips
+cornerstoneUX.touchTips
 *******************************************************************************/
 *[data-touchTips]:not(img):not(figure) {
 	border-bottom: 1px dotted #999;
