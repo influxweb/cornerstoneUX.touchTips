@@ -29,7 +29,7 @@
 				<h3>The Why?</h3>
 				<p>While searching for a good solution to add tool-tips to a responsive site, I came across and article by <a href="http://osvaldas.info/elegant-css-and-jquery-tooltip-responsive-mobile-friendly" target="_blank">Osvaldas Valutis</a> on such a topic. While his approach did everything I needed, I was not a fan of the automatic invoking method being used. I have taken his concept and expanded it to allow for multiple ways to send content to the tool-tip for display as well as flexibility in the maximum width.</p>
 				<h3>Plug-In Options</h3>
-				<table class="table-border table-stripe">
+				<table class="table-border table-stripe mobile-table">
 					<thead>
 						<tr>
 							<th>Property</th>
@@ -58,10 +58,10 @@
 				<h3>Installation</h3>
 				<p>To install touchTips is real easy. Just add a link to the <code>touchTips.css</code> file in the <code>HEAD</code> of your page. Add a link to the <code>jquery.touchTips.js</code> file below your link to jQuery, and add the initialization string to your page or external JavaScript file. Then, just add a <code>data-touchTips</code> attribute to the element(s) you would like to have trigger your tool-tip(s).</p>
 				<h3>Examples</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur <span id="js-test1" data-touchTips>adipiscing</span> elit. Nullam vitae enim at leo feugiat porta. Phasellus vitae est non nisi suscipit finibus sed quis felis. Curabitur blandit arcu condimentum velit scelerisque rutrum. Praesent ultrices sit amet velit in interdum. <span id="js-test2" data-touchTips="This text is being passed through the data-touchTips attribute.">Phasellus molestie purus</span> facilisis erat consequat, eget accumsan ipsum interdum. Nullam tortor nunc, accumsan sed pellentesque venenatis, sodales a ex. Nullam laoreet ultricies lorem, egestas dignissim mauris euismod eget. Nulla interdum finibus libero, nec <span id="js-test3" data-touchTips="#js-tool-tip-contents">mollis felis</span> accumsan quis.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur <span id="js-test1" data-touchTips>adipiscing</span> elit. Nullam vitae enim at leo feugiat porta. Phasellus vitae est non nisi suscipit finibus sed quis felis. Curabitur blandit arcu condimentum velit scelerisque rutrum. Praesent ultrices sit amet velit in interdum. Phasellus <span id="js-test2" data-touchTips="This text is being passed through the data-touchTips attribute">molestie purus</span> facilisis erat consequat, eget accumsan ipsum interdum. Nullam tortor nunc, accumsan sed pellentesque venenatis, sodales a ex. Nullam laoreet ultricies lorem, egestas dignissim mauris euismod eget. Nulla interdum finibus libero, nec <span id="js-test3" data-touchTips="#js-tool-tip-contents">mollis felis</span> accumsan quis.</p>
 				<p>Pellentesque eu tortor non arcu feugiat molestie id ultricies metus. Etiam id tempus diam. Vestibulum non nisi vel velit ultricies luctus. <span id="js-test4" data-touchTips>Nulla facilisi</span>.</p>
-				<div id="js-tool-tip-contents" class="all-hidden"><p>This is really cool.</p></div>
-				<div id="js-tool-tip-contents2" class="all-hidden"><p>This is really cool also.</p><img src="http://placehold.it/360x150"></div>
+				<div id="js-tool-tip-contents" class="all-hidden"><p>This is really cool also.</p></div>
+				<div id="js-tool-tip-contents2" class="all-hidden"><p>This is really cool.</p><img src="http://placehold.it/300x150"></div>
 				<blockquote>
 					<p>Initialization</p>
 					<pre>
@@ -79,7 +79,7 @@
 					</pre>
 					<p>Here we are passing the DOM element we would like to display the contents of in the tool-tip in the value of the <code>data-touchTips</code> attribute.</p>
 					<pre>
-						$('#js-test1').touchTips({
+						$('#js-test4').touchTips({
 							tip: 'string test'
 						});
 					</pre>

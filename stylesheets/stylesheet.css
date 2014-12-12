@@ -378,7 +378,6 @@ cornerstoneUX.touchTips
 	box-shadow: 0 0.50rem 0.50rem -0.25rem rgba(0,0,0,.3);
 	color: #fff;
 	opacity: 0;
-	overflow: auto;
 	padding: 1rem;
 	position: absolute;
 	text-align: center;
