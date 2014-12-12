@@ -12,9 +12,9 @@ Osvaldas Valutis [http://osvaldas.info/elegant-css-and-jquery-tooltip-responsive
 cornerstoneUX.touchTips Plug-In
 Version: 1.0.0
 Author: Matt Zimmermann
-Website & Documentation: http://github.io
-Repo: http://github.com/
-Issues: http://github.com/
+Website & Documentation: http://influxweb.github.io/cornerstoneUX.touchTips/
+Repo: https://github.com/influxweb/cornerstoneUX.touchTips
+Issues: https://github.com/influxweb/cornerstoneUX.touchTips/issues
 License: MIT
 */
 
